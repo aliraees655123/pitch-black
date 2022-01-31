@@ -84,13 +84,13 @@
     height: 64px;
     color:  #1F1D36;    
 
-    width: 853px;
+    /* width: 853px; */
 }
 .inputNameFundRaising{
 
     border: none;
     height: 75px;
-    width: 495px;
+    /* width: 495px; */
     font-size: 30px;
     line-height: 56px;
     color:  #878787;
@@ -99,6 +99,7 @@
     font-style: normal;
     margin-top: 139px;
     margin-left: 22px;
+    outline: none;
 
 }
 .line{
@@ -110,7 +111,7 @@
 .inputEmailToGetStart{
     border: none;
     height: 75px;
-    width: 495px;
+    /* width: 495px; */
     font-size: 30px;
     line-height: 56px;
     color:  #878787;
@@ -119,6 +120,7 @@
     font-style: normal;
     margin-top: 65px;
     margin-left: 22px;
+    outline: none;
 }
 .incorporateCompany{
     padding-left: 84px;
@@ -175,7 +177,7 @@ input[type=radio]{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
- 
+    outline: none;
     margin-left: 22px;
 }
 .inputComapnyDesc{
@@ -188,7 +190,7 @@ input[type=radio]{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
- 
+   outline: none;
     margin-left: 22px;
     margin-top: 57px;
 
@@ -241,7 +243,7 @@ input[type=radio]{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
- 
+    outline: none;
     margin-left: 22px;
     padding-top: 98px;
 
@@ -285,11 +287,49 @@ input[type=radio]{
     
 }
 
-@media (max-width:912px) {
-   
-
-    .infoToGetStart{
-        font-size: 20px;
-
+@media (max-width:450px) {
+    .inputNameFundRaising {
+        font-size: 26px;
     }
+    .inputEmailToGetStart {
+        font-size: 26px;
+    }
+   
+}
+
+@media (max-width:650px) {
+   
+}
+
+@media (max-width:400px) {
+    .infoToGetStart {
+        padding-top: 1px;
+        padding-left: 8px;
+    }
+    .inputNameFundRaising {
+        font-size: 20px;
+    }
+    .inputEmailToGetStart {
+        font-size: 20px;
+    }
+    .fundRaisingP2 {
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 40px;
+        color: #1F1D36;
+    }
+    .fundRaisingP1 {
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 44px;
+        font-style: normal;
+        font-family: 'Nunito', sans-serif;
+        color: #FBEDE0;
+    }
+    .headingFundRaising {
+        padding-left: 29px;
+    }
+
 }
