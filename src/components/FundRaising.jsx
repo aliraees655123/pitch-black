@@ -62,7 +62,7 @@ const FundRaising = () => {
             <div className="incorporateCompany">
               <p className="incorporateParagraph">
                 {" "}
-                Are you looking to incorporate your company today?
+                Are you looking to incorporate your company<br/>today?
               </p>
               <div className="radioDivIncorporate">
                 <input
@@ -117,15 +117,15 @@ const FundRaising = () => {
                 What state is your company registered in?{" "}
               </p>
 
-              <input type="text" className="stateCompanyInput" />
+              <textarea rows="4" type="text" className="stateCompanyInput" />
 
               <div>
-                {" "}
-                <input
-                  className="inputUrl"
-                  type="text"
-                  placeholder="What is your company url?"
-                />
+                
+                    <input
+                    className="inputUrl"
+                    type="text"
+                    placeholder="What is your company url?"
+                    />
               </div>
               <div className="lineEnd"> </div>
             </div>

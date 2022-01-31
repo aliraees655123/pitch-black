@@ -84,13 +84,13 @@
     height: 64px;
     color:  #1F1D36;    
 
-    width: 853px;
+    /* width: 853px; */
 }
 .inputNameFundRaising{
 
     border: none;
     height: 75px;
-    width: 495px;
+    /* width: 495px; */
     font-size: 30px;
     line-height: 56px;
     color:  #878787;
@@ -99,6 +99,7 @@
     font-style: normal;
     margin-top: 139px;
     margin-left: 22px;
+    outline: none;
 
 }
 .line{
@@ -110,7 +111,7 @@
 .inputEmailToGetStart{
     border: none;
     height: 75px;
-    width: 495px;
+    /* width: 495px; */
     font-size: 30px;
     line-height: 56px;
     color:  #878787;
@@ -119,6 +120,7 @@
     font-style: normal;
     margin-top: 65px;
     margin-left: 22px;
+    outline: none;
 }
 .incorporateCompany{
     padding-left: 84px;
@@ -151,19 +153,19 @@
         font-size: 30px;
         line-height: 56px;
         color: #878787;
-        width: 676px;
+   
         font-weight: bold;
 }
-.inputRadio{
+/* .inputRadio{
     width: 34px;
     height: 34px;
     
     
-}
-input[type=radio]{
+} */
+/* input[type=radio]{
     transform: scale(2);
     background-color: red;
-}
+} */
 .inputCompanyName{
     
     border: none;
@@ -175,7 +177,7 @@ input[type=radio]{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
- 
+    outline: none;
     margin-left: 22px;
 }
 .inputComapnyDesc{
@@ -188,7 +190,7 @@ input[type=radio]{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
- 
+   outline: none;
     margin-left: 22px;
     margin-top: 57px;
 
@@ -201,7 +203,7 @@ input[type=radio]{
     font-size: 30px;
     line-height: 56px;
     color: #878787;
-    width: 676px;
+    
     font-weight: bold;
     height: 75px;
 }
@@ -216,7 +218,7 @@ input[type=radio]{
     font-size: 30px;
     line-height: 56px;
     color: #000000;
-    width: 664px;
+    
     height: 47px;
     margin-top: 80px;
 
@@ -241,7 +243,7 @@ input[type=radio]{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
- 
+    outline: none;
     margin-left: 22px;
     padding-top: 98px;
 
@@ -283,13 +285,184 @@ input[type=radio]{
     right: 20px;
     top: 28px;
     
+
 }
-
-@media (max-width:912px) {
+.btnMainContinue {
+    padding-bottom: 50px;
+}
+@media (max-width:890px) {
+    .inputComapnyDesc{
+       
+        width: 541px;
+        font-size: 22px;
+    }
+    .inputCompanyName{
+        font-size: 22px;
+    }
+    .btnMainContinue{
+        margin-right: 59px; 
+    }
    
-
-    .infoToGetStart{
-        font-size: 20px;
+}
+@media (max-width:753px) {
+    .stateCompanyInput{
+        width: 573px;
 
     }
+   
+}
+@media (max-width:706px) {
+    .inputComapnyDesc{
+       
+        width: 441px;
+        font-size: 18px;
+    }
+    .inputCompanyName{
+        font-size: 18px;
+    }
+   
+}
+
+@media (max-width:692px) {
+    .stateCompanyInput{
+        width: 482px;
+        
+      
+    }
+    .companyStateP{
+        font-size: 20px;
+    }
+   
+}
+
+@media (max-width:613px) {
+   
+    .inputCompanyName { 
+        font-size: 14px;
+        width: 300px;
+        margin-left: 10px;
+    }
+    .inputComapnyDesc {
+        width: 319px;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .yourCompany {
+        padding-left: 20px;
+        
+    }
+    .paragraphsFundRaisingConatiner {
+       
+        padding-left: 31px;
+       
+    }
+    .infoToGetStart{
+        padding-left: 31px;
+    }
+    .incorporateCompany {
+        padding-left: 45px;
+       
+    }
+    
+   
+}
+
+@media (max-width:528px) {
+    .stateCompanyInput{
+        width: 378px;
+        margin-top: 30px;
+       
+      
+    }
+    .companyStateP{
+
+        line-height: 30px;
+    }
+    .inputUrl {
+        width: 310px;
+        font-size: 20px;
+    }
+    
+   
+    
+   
+}
+
+
+@media (max-width:450px) {
+    .inputNameFundRaising {
+        font-size: 26px;
+    }
+    .inputEmailToGetStart {
+        font-size: 26px;
+    }
+   
+}
+@media (max-width:413px) {
+    .stateCompanyInput {
+        width: 330px;
+       
+    }
+   
+}
+
+@media (max-width:400px) {
+    .infoToGetStart {
+        padding-top: 1px;
+        padding-left: 30px;
+    }
+    .inputNameFundRaising {
+        font-size: 20px;
+    }
+    .inputEmailToGetStart {
+        font-size: 20px;
+    }
+    .fundRaisingP2 {
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 40px;
+        color: #1F1D36;
+    }
+    .fundRaisingP1 {
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 44px;
+        font-style: normal;
+        font-family: 'Nunito', sans-serif;
+        color: #FBEDE0;
+    }
+    .headingFundRaising {
+        padding-left: 29px;
+    }
+
+}
+input[type='radio']:after {
+    width: 34px;
+    height: 34px;
+    border-radius: 25px;
+    top: -15px;
+    left: -11px;
+    position: relative;
+    background-color:  #C4C4C4;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 34px;
+    height: 34px;
+    border-radius: 25px;
+    top: -15px;
+    left: -11px;
+    position: relative;
+    background-color: #BF907E;;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
