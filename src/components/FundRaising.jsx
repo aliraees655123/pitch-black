@@ -4,12 +4,19 @@ import icon1 from '../components/images/arrow.png'
 const FundRaising = () => {
   const [show, setShow] = useState();
 
+  const[state,setState]=useState();
+
+
+  const changeWidth=(e)=>{
+        
+    setState(1);
+    console.log(state);
+
+  }
 
   const showData = () => {
     if (show === undefined) {
       setShow(0);
-    } else {
-      setShow(1);
     }
   };
   return (
@@ -34,10 +41,10 @@ const FundRaising = () => {
           </div>
         </div>
 
-        <div class="mainCardContainerFundRaising">
+        <div class="mainCardContainerFundRaising" style={show==0?{minHeight:"923px"}:null} >
           <div className="infoToGetStart">
             <p className="paragraphInfoToGetStart">
-              Enter the information we need to get started{" "}
+              Enter the information we need to get <br/>started{" "}
             </p>
             <div>
               {" "}
@@ -53,15 +60,25 @@ const FundRaising = () => {
               <input
                 className="inputEmailToGetStart"
                 type="text"
-                placeholder="Whta's your email?"
+                placeholder="What's your email?"
               />
+              
+            </div>
+            <div className="line"> </div>
+            <div>
+            <input
+                className="inputPasswordToGetStart"
+                type="text"
+                placeholder="What's password would you like to use?"
+              />
+
             </div>
             <div className="line"> </div>
           </div>
           {(show === 0 || show === 1) && (
             <div className="incorporateCompany">
               <p className="incorporateParagraph">
-                {" "}
+               
                 Are you looking to incorporate your company<br/>today?
               </p>
               <div className="radioDivIncorporate">
@@ -80,16 +97,17 @@ const FundRaising = () => {
                   type="radio"
                   name="radioIncorporate"
                   className="inputRadio"
+                  onChange={changeWidth}
                   value=""
                 />
                 <label className="labelIncorporate">
-                  Yes, let's set up my company.
+                  I would like to use an existing company I'd like to use pitchBLACK for.
                 </label>
               </div>
             </div>
           )}
 
-          {show === 1 && (
+          {state === 1 && (
             <div className="yourCompany">
               <p className="yourCompanyParagraph">
                 Can you tell us about your company?
@@ -109,6 +127,7 @@ const FundRaising = () => {
                   className="inputComapnyDesc"
                   type="text"
                   placeholder="Give us a short description of what your copmany does."
+                  
                 />
               </div>
               <div className="line"> </div>
@@ -117,7 +136,7 @@ const FundRaising = () => {
                 What state is your company registered in?{" "}
               </p>
 
-              <textarea rows="4" type="text" className="stateCompanyInput" />
+              <input rows="4" type="text" className="stateCompanyInput" />
 
               <div>
                 
@@ -128,6 +147,42 @@ const FundRaising = () => {
                     />
               </div>
               <div className="lineEnd"> </div>
+
+              <div>
+                <p className="paragraphQuestionaire">Next you will be taking a questionaire, to determine whether your<br/> company is ready to start 
+                  fundraising on the pitchBLACK platfrom.<br/>The questionaire will take about 15-20 minutes to complete.
+                </p>
+              </div>
+              <div>
+                <p className="paragraphAreReady">Are you ready to take the questionaire now?</p>
+              </div>
+              <div className="radioButton">
+                      <input
+                          type="radio"
+                          value=""
+                          name="radioIncorporate"
+                          className="inputRadio"
+                        />
+
+                          <label className="labelIncorporate">
+                          Yes, let's do it.
+                        </label>
+                      </div>
+                      <div>
+                      <input
+                          id="inputID"
+                          type="radio"
+                          value=""
+                          name="radioIncorporate"
+                          className="inputRadio"
+                        />
+
+                      <label className="labelIncorporate" id="lableID">
+                          No, I'll finish later.
+                        </label>
+              </div>
+
+              <div className="paddingDiv"></div>
             </div>
           )}
            <div className="btnMainContinue">
